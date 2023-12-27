@@ -13,7 +13,7 @@ const ImageUpload = () => {
   }, [])
   async function getImages() {
     setSpin(true);
-    let data = await fetch("https://rental-app-b051.onrender.com/all", {
+    let data = await fetch("http://localhost:5000/all", {
       method: "GET",
       headers: {
         "content-type": "application/json"
@@ -34,7 +34,7 @@ const ImageUpload = () => {
     <div className='bikes-div'>
       <Base>
         <div className='container-fluid d-flex justify-content-center align-items-center align-content-center flex-column mt-5'>
-          <h4 className='mt-4 mb-4 text-white tit'>Available bikes</h4>
+          <h4 className='mt-4 mb-4 text-white tit'>All the Products</h4>
           <div className='products d-flex flex-wrap flex-row justify-content-center min-vh-100 mb-5'>
             {images.map((prod) => (
               <div key={prod._id} className='product'>

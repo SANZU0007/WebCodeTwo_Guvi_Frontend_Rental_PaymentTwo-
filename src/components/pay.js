@@ -26,7 +26,7 @@ function AmountPay() {
   }, [])
   let [bike, setBike] = useState([]);
   async function getImages() {
-    let data = await fetch("https://rental-app-b051.onrender.com/all", {
+    let data = await fetch("http://localhost:5000/all", {
       method: "GET",
       headers: {
         "content-type": "application/json"
@@ -45,7 +45,7 @@ function AmountPay() {
       price: totalAmount,
       bookedUserId:userId
     }
-    let bookroom = await fetch(`https://rental-app-b051.onrender.com/booking/${id}`, {
+    let bookroom = await fetch(`http://localhost:5000/booking/${id}`, {
       method: "POST",
       body: JSON.stringify(dates),
       headers: {
@@ -67,7 +67,7 @@ function AmountPay() {
       findBike[0].quantity = 1;
 
 
-      const paymentPage = await fetch(`https://rental-payment.onrender.com/booking/payment-page/user-pay/${id}`, {
+      const paymentPage = await fetch(`http://localhost:4000/booking/payment-page/user-pay/${id}`, {
         method: "POST",
         body: JSON.stringify(findBike),
         headers: {

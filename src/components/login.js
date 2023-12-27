@@ -28,7 +28,7 @@ function Login() {
 
     async function loginCheck(obj) {
         setSpin(true);
-        let result = await fetch("https://rental-app-b051.onrender.com/login", {
+        let result = await fetch("http://localhost:5000/login", {
             method: "POST",
             body: JSON.stringify(obj),
             headers: {

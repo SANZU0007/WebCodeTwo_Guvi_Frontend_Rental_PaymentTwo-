@@ -17,14 +17,14 @@ function Base({children}){
         <div className="base-div">
             <nav class="navbar navbar-expand-lg bg-secondary nav-bar">
         <div class="container-fluid d-flex justify-content-space-between">
-          {/* <img src={`https://images.template.net/wp-content/uploads/2016/08/04104007/Vintage-Bike-Logo.jpg`}  className='logo-img mt-3 mb-3'/> */}
+         
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style={{ "--bs-scroll-height": 100 + "px" }}>
               <li class="nav-item">
-                <button className='btn bg-warning ms-3 mt-3 mb-3 bt' onClick={()=>navigate("/available-bikes")}>All bikes</button>
+                <button className='btn bg-warning ms-3 mt-3 mb-3 bt' onClick={()=>navigate("/available-bikes")}>All  products</button>
               </li>
               <li class="nav-item">
                 <button className='btn bg-warning ms-3 mt-3 mb-3 bt' onClick={()=>navigate("/bookings")}>My booking</button>

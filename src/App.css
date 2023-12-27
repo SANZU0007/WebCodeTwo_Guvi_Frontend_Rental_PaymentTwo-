@@ -20,10 +20,10 @@
   }
 }
 body{
-  background: linear-gradient(to right,  rgb(127, 114, 208), violet)
+  background: linear-gradient(to right,  rgb(39, 16, 166), rgb(247, 241, 247))
 }
 .App-header {
-  background-color: #282c34;
+  background-color: #032569;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -57,8 +57,8 @@ img{
 }
 .bk-btn{
   border: none;
-  background-color: yellow;
-  color: black;
+  background-color: rgb(45, 55, 249);
+  color: rgb(248, 239, 239);
   padding: 7px 10px;
 }
 .product{
@@ -67,7 +67,7 @@ img{
   flex-direction: column;
   gap:20px;
   flex-wrap: wrap;
-  border: 1px solid rgb(241, 173, 166);
+  border: 3px solid rgb(251, 251, 251);
   border-radius: 10px;
 }
 .products{
@@ -77,7 +77,7 @@ img{
   margin-top: -2px;
 }
 .bk-btn:hover{
-  background-color: salmon !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 .name{
   font-family: 'Staatliches', sans-serif;
@@ -126,7 +126,8 @@ th, td{
   padding: 5px 15px;
   border-radius: 7px;
   cursor: pointer;
-  background-color: yellow;
+  color: white;
+  background-color: rgb(0, 42, 255);
 }
 .bxx{
   width: 60%;
@@ -155,13 +156,13 @@ th, td{
   width: 330px;
   height: 400px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  border: 1px solid salmon;
+  border: 5px solid rgb(255, 255, 255);
 }
 .signup-btn{
   padding: 7px 15px;
   border-radius: 7px;
   border: none;
-  background: red;
+  background: rgb(13, 69, 253);
   color: white;
 }
 .signup-btn:hover{
@@ -188,8 +189,8 @@ th, td{
   top: 0;
 }
 .bt{
-  background-color: black !important;
-  color: white !important;
+  background-color: rgb(7, 3, 87) !important;
+  color: rgb(255, 255, 255) !important;
 }
 .bike-data{
   width: 330px;

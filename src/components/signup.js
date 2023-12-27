@@ -30,7 +30,7 @@ function Signup() {
     })
     async function signUpUser(obj) {
         setSpin(true);
-        let reult = await fetch("https://rental-app-b051.onrender.com/signup", {
+        let reult = await fetch("http://localhost:5000/signup", {
             method: "POST",
             body: JSON.stringify(obj),
             headers: {
