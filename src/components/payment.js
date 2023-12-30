@@ -1,10 +1,10 @@
-function PaymentPage(){
-    return (
-        <div className="payment-div">
-            <div className="payment">
+// function PaymentPage(){
+//     return (
+//         <div className="payment-div">
+//             <div className="payment">
 
-            </div>
-        </div>
-    )
-}
-export default PaymentPage;
+//             </div>
+//         </div>
+//     )
+// }
+// export default PaymentPage;

@@ -15,7 +15,7 @@ function BookBike() {
     getImages();
   }, [id]);
   async function getImages() {
-    let data = await fetch("http://localhost:5000/all", {
+    let data = await fetch("https://rental-backend-one.onrender.com/all", {
       method: "GET",
       headers: {
         "content-type": "application/json",

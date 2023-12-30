@@ -13,7 +13,7 @@ const ImageUpload = () => {
   }, [])
   async function getImages() {
     setSpin(true);
-    let data = await fetch("http://localhost:5000/all", {
+    let data = await fetch("https://rental-backend-one.onrender.com/all", {
       method: "GET",
       headers: {
         "content-type": "application/json"

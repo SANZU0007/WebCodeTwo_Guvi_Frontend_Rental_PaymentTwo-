@@ -26,7 +26,7 @@ function CheckEmail(){
     async function checkUserEmail(obj){
         setBtn(false);
         setSpin(true);
-        let result = await fetch("https://rental-app-b051.onrender.com/forgot", {
+        let result = await fetch("https://rental-backend-one.onrender.com/forgot", {
             method:"POST",
             body:JSON.stringify(obj),
             headers:{

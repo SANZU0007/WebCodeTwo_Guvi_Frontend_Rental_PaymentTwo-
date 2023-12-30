@@ -26,7 +26,7 @@ function UpdatePassword() {
     async function updatePassword(obj){
         setBtn(false);
         setSpin(true);
-        let result = await fetch(`http://localhost:5000/update/${id}`,{
+        let result = await fetch(`https://rental-backend-one.onrender.com/update/${id}`,{
             method:"POST",
             body:JSON.stringify(obj),
             headers:{
